@@ -56,6 +56,7 @@ section{
 .section-title{
     flex: 0 0 100%;
     max-width: 100%;
+    margin-bottom:60px;
 }
 .section-title h2{
     font-size: 40px;
@@ -106,6 +107,9 @@ section{
 }
 .btn:hover{
     transform:scale(1.05) ;
+}
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
 }
 /* aside */
 .aside{
@@ -288,4 +292,179 @@ h3.my-profession{
     border-radius: 5px;
     height: 400px;
     width: 320px;
+}
+/* abaut */
+.abaut .abaut-content{
+   flex: 0 0 100%;
+   max-width: 100%;
+}
+.abaut .abaut-content .abaut-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+.abaut .abaut-content .abaut-text h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--bg-text-black-900);
+
+}
+.abaut .abaut-content .abaut-text h3 span{
+    color: var(--skin-color);
+}
+.abaut .abaut-content .abaut-text p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--bg-text-black-700);
+}
+.abaut .abaut-content .personal-info{
+    flex: 0 0 50%;
+    max-width: 600;
+    margin-top: 40px;
+}
+.abaut .abaut-content .personal-info .info-item{
+    flex: 0 0 50%;
+    max-width: 50%;
+
+}
+.abaut .abaut-content .personal-info .info-item p{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--bg-text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.abaut .abaut-content .personal-info .info-item p span{
+    font-weight: 400;
+    color: var(--bg-text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+
+}
+.abaut .abaut-content .personal-info .buttons{
+    margin-top: 30px;
+
+}
+.abaut .abaut-content .personal-info .buttons .btn{
+    margin-right: 15px;
+    margin-top: 10px;
+
+}
+.abaut .abaut-content .skills{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+
+}
+.abaut .abaut-content .skills .skill-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.abaut .abaut-content .skills .skill-item h5{
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bg-text-black-900);
+    text-transform: capitalize;
+}
+.abaut .abaut-content .skills .skill-item .progress{
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.abaut .abaut-content .skills .skill-item {
+    margin-bottom: 25px;
+}
+.abaut .abaut-content .skills .skill-item .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    border-radius:4px ;
+    background-color: var(--skin-color);
+}
+.abaut .abaut-content .skills .skill-item .skill-percent{
+    position: absolute;
+    right: 0;
+    color: var(--bg-text-black-900);
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.abaut .abaut-content .education,
+.abaut .abaut-content .experience{
+   flex: 0 0 50%;
+   max-width: 50%;
+   margin-top: 30px;
+}
+.abaut .abaut-content h3.title{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--bg-text-black-900);
+}
+.abaut .abaut-content .timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+.abaut .abaut-content .timeline{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.abaut .abaut-content .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.abaut .abaut-content .timeline .timeline-item:last-child{
+    padding-bottom: 0;
+}
+.abaut .abaut-content .timeline .timeline-item::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-color);
+}
+.abaut .abaut-content .timeline .circle-dot{
+   position: absolute;
+   left: 0;
+   top:0;
+   height: 15px;
+   width: 15px;
+   border-radius: 50%;
+   background-color: var(--skin-color);
+}
+.abaut .abaut-content .timeline .timeline-date{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--bg-text-black-700);
+
+}
+.abaut .abaut-content .timeline .timeline-date .fa{
+    margin-right: 5px;
+}
+.abaut .abaut-content .timeline .timeline-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--bg-text-black-900);
+}
+.abaut .abaut-content .timeline .timeline-text{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--bg-text-black-700);
 }
