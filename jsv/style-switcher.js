@@ -21,12 +21,18 @@ function setActiveStyle(color){
     });
 }
 /*============================== THEME LIGHT AND DARK MODE ===========================*/
-const dayNaght =document.querySelector(".day-night");
-window.addEventListener("load",() =>{
+const dayNight =document.querySelector(".day-night");
+dayNight.addEventListener("click", () => {
+    dayNight.querySelector("i").classList.toggle("fa-sun");
+    dayNight.querySelector("i").classList.toggle("fa-moon");
+    document.body.classList.toggle("dark");
+})
+window.addEventListener("load",() => {
     if(document.body.classList.contains("dark")){
-        dayNaght.querySelector("i").classList.add("fa-sun");
+        dayNight.querySelector("i").classList.add("fa-sun");
 
     }else{
-        dayNaght.querySelector("i").classList.remove("fa-moon");
+        dayNight.querySelector("i").classList.add("fa-moon");
     }
 });
+/*============================== THEME LIGHT AND DARK MODE ===========================*/

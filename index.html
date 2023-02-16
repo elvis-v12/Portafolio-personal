@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="css/styele.css">
     <!-- STYLE SWITCHER -->
-    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" >
     <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
     <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
     <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
@@ -28,18 +28,18 @@
         <span></span>
       </div>
       <ul class="nav">
-        <li><a href="#" class="active"><i class="fa  fa-home"></i>Home</a></li>
-        <li><a href="#" ><i class="fa  fa-user"></i>About</a></li>
-        <li><a href="#"><i class="fa  fa-list"></i>Service</a></li>
-        <li><a href="#"><i class="fa  fa-briefcase"></i>portafolio</a></li>
-        <li><a href="#"><i class="fa  fa-comments"></i>Contact</a></li>
+        <li><a href="#home" class="active"><i class="fa  fa-home"></i>Home</a></li>
+        <li><a href="#abaut" ><i class="fa  fa-user"></i>About</a></li>
+        <li><a href="#services"><i class="fa  fa-list"></i>Service</a></li>
+        <li><a href="#portafolio"><i class="fa  fa-briefcase"></i>portafolio</a></li>
+        <li><a href="#contact"><i class="fa  fa-comments"></i>Contact</a></li>
       </ul>
     </div>
     <!-- asie End -->
     <!-- main Content Star -->
     <div class="main-content">
         <!-- home section start -->
-     <section class="section home   ">
+     <section class="section active home " id="home">
             <div class="container">
               <div class="row">
                 <div class="home-info padd-15">
@@ -47,7 +47,7 @@
                   <h3 class="my-profession">I' m a <span class="typing">web desingner</span></h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi quo laborum tempora ratione, consequuntur ad tempore, repellat eius assumenda sunt dolores nesciunt beatae perspiciatis temporibus cumque? Ad, cupiditate vel?
                   Esse illum error ratione similique in! Incidunt, rerum eos.</p>
-                  <a href="#contact" class="btn hire-me">hire Me</a>
+                  <a href="#" class="btn">Download CV</a>
                 </div>
                 <div class="home-img padd-15">
                   <img src="imaganes/img-portafolio.jpg" alt="">
@@ -57,7 +57,7 @@
         </section>
         <!-- home section End -->
          <!-- about section Start -->
-         <section class="abaut section ">
+         <section class="abaut section " id="abaut">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -104,35 +104,34 @@
                     </div>
                     <div class="row">
                       <div class="buttons padd-15">
-                        <a href="#" class="btn">Download CV</a>
-                        <a href="#contact" class="btn hire-me">Hire Me</a>
+                        <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                       </div>
                     </div>
                   </div>
                   <div class="skills .padd-15">
                     <div class="row">
-                      <div class="skill-item">
+                      <div class="skill-item padd-15">
                         <h5>JAVA</h5>
                         <div class="progress">
                           <div class="progress-in" style="width: 86%;"></div>
                           <div class="skill-percent">86%</div>
                         </div>
                       </div>
-                      <div class="skill-item">
+                      <div class="skill-item padd-15">
                         <h5>JS</h5>
                         <div class="progress">
                           <div class="progress-in" style="width: 66%;"></div>
                           <div class="skill-percent">66%</div>
                         </div>
                       </div>
-                      <div class="skill-item">
+                      <div class="skill-item padd-15">
                         <h5>HTML</h5>
                         <div class="progress">
                           <div class="progress-in" style="width: 96%;"></div>
                           <div class="skill-percent">96%</div>
                         </div>
                       </div>
-                      <div class="skill-item">
+                      <div class="skill-item padd-15">
                         <h5>MYSQL</h5>
                         <div class="progress">
                           <div class="progress-in" style="width: 76%;"></div>
@@ -234,7 +233,7 @@
          </section>
           <!-- about section End -->
             <!-- Services section Start -->
-            <section class="service section ">
+            <section class="service section " id="services">
              <div class="container">
               <div class="row">
                 <div class="section-title padd-15">
@@ -313,7 +312,7 @@
             </section>
              <!-- Services section End -->
               <!-- Portafoli section Start -->
-              <section class="portafolio section "> 
+              <section class="portafolio section " id="portafolio"> 
                 <div class="container">
                   <div class="row">
                     <div class="section-title padd-15">
@@ -385,7 +384,7 @@
               </section>
               <!-- Portafoli section End -->
               <!-- Contact section start -->
-              <section class="contact section">
+              <section class="contact section" id="contact">
                 <div class="container">
                   <div class="row">
                     <div class="section-title padd-15">
@@ -496,6 +495,7 @@
       </div>
      <!-- Style Switcher End -->
 <!-- js files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 <script src="jsv/javascrip.js"></script>
 <script src="jsv/style-switcher.js"></script>
 </body>
